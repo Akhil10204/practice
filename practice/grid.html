@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS Grids</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="grid.css" />
+    <script src="main.js"></script>
+    <style>
+
+        .wrapper{
+            display:grid;
+            grid-template-columns: 70% 30%;
+            grid-gap: 1em;
+        }
+    .wrapper > div{
+        background:#eee;
+        padding:1em;
+    }
+    
+    .wrapper > div:nth-child(odd){
+        background:#ddd;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, esse. Nesciunt aspernatur mollitia incidunt officiis beatae, saepe vel laudantium tempore labore, maiores porro. Aspernatur eveniet aliquid provident aut asperiores quibusdam eum, doloremque deserunt reprehenderit voluptatibus vero optio soluta! Eum, maiores beatae repellendus officia dicta nulla nostrum veritatis, id accusamus ducimus fugiat deserunt consequatur sed officiis et! Magnam iusto provident voluptatem impedit excepturi quibusdam quae alias et amet, quis quasi numquam! Mollitia consectetur, exercitationem delectus totam eos non culpa ullam minus.        </div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias repellat, hic magnam magni pariatur, velit explicabo sed aliquam
+            harum, atque quisquam. Libero consequatur reiciendis labore debitis in culpa corporis nisi?</div>
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, esse. Nesciunt aspernatur mollitia incidunt officiis
+            beatae, saepe vel laudantium tempore labore, maiores porro. Aspernatur eveniet aliquid provident aut asperiores quibusdam
+            eum, doloremque deserunt reprehenderit voluptatibus vero optio soluta! Eum, maiores beatae repellendus officia dicta
+            nulla nostrum veritatis, id accusamus ducimus fugiat deserunt consequatur sed officiis et! Magnam iusto provident voluptatem
+            impedit excepturi quibusdam quae alias et amet, quis quasi numquam! Mollitia consectetur, exercitationem delectus totam
+            eos non culpa ullam minus. </div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias repellat, hic magnam magni pariatur, velit explicabo sed aliquam
+            harum, atque quisquam. Libero consequatur reiciendis labore debitis in culpa corporis nisi?</div>
+
+        </div>
+</body>
+</html>
